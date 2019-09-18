@@ -1,0 +1,48 @@
+[2019-09-16 19:24:15] Executing bootstrap tasks
+[2019-09-16 19:24:15] Java(TM) SE Runtime Environment 1.8.0_221-b11
+[2019-09-16 19:24:15] Product org.eclipse.products.epp.package.rust.2019-06
+[2019-09-16 19:24:15] Bundle org.eclipse.oomph.setup 1.13.0.v20190530-1228, build=4030, branch=ed8d2fdcc99c1d3461399fc1bee02645433fa697
+[2019-09-16 19:24:15] Bundle org.eclipse.oomph.setup.core 1.13.0.v20190531-1228, build=4030, branch=ed8d2fdcc99c1d3461399fc1bee02645433fa697
+[2019-09-16 19:24:15] Bundle org.eclipse.oomph.setup.p2 1.11.0.v20190530-1228, build=4030, branch=ed8d2fdcc99c1d3461399fc1bee02645433fa697
+[2019-09-16 19:24:15] Performing P2 Director (Eclipse IDE for Rust Developers (2019-06))
+[2019-09-16 19:24:15] Offline = false
+[2019-09-16 19:24:15] Mirrors = true
+[2019-09-16 19:24:15] Resolving 15 requirements from 3 repositories to C:\Users\ROSE\Eclipse\rust-2019-06\eclipse
+[2019-09-16 19:24:15] Requirement epp.package.rust [4.12.0,5.0.0)
+[2019-09-16 19:24:15] Requirement org.eclipse.platform.feature.group [4.12.0,5.0.0)
+[2019-09-16 19:24:15] Requirement org.eclipse.rcp.feature.group [4.12.0,5.0.0)
+[2019-09-16 19:24:15] Requirement org.eclipse.corrosion.feature.feature.group
+[2019-09-16 19:24:15] Requirement org.eclipse.egit.feature.group
+[2019-09-16 19:24:15] Requirement org.eclipse.egit.gitflow.feature.feature.group
+[2019-09-16 19:24:15] Requirement org.eclipse.egit.mylyn.feature.group
+[2019-09-16 19:24:15] Requirement org.eclipse.epp.mpc.feature.group
+[2019-09-16 19:24:15] Requirement org.eclipse.mylyn.bugzilla_feature.feature.group
+[2019-09-16 19:24:15] Requirement org.eclipse.mylyn.context_feature.feature.group
+[2019-09-16 19:24:15] Requirement org.eclipse.mylyn.ide_feature.feature.group
+[2019-09-16 19:24:15] Requirement org.eclipse.mylyn.wikitext_feature.feature.group
+[2019-09-16 19:24:15] Requirement org.eclipse.mylyn_feature.feature.group
+[2019-09-16 19:24:15] Requirement org.eclipse.tm.terminal.feature.feature.group
+[2019-09-16 19:24:15] Requirement org.eclipse.oomph.setup.feature.group
+[2019-09-16 19:24:15] Repository http://download.eclipse.org/technology/epp/packages/2019-06
+[2019-09-16 19:24:15] Repository http://download.eclipse.org/releases/2019-06/201906191000
+[2019-09-16 19:24:15] Repository http://download.eclipse.org/oomph/updates/milestone/latest
+[2019-09-16 19:24:16] ERROR: org.eclipse.equinox.p2.transport.ecf code=1006 Unknown Host: http://download.eclipse.org/oomph/updates/milestone/latest/content.xml
+java.net.UnknownHostException: download.eclipse.org
+  at java.net.InetAddress.getAllByName0(Unknown Source)
+  at java.net.InetAddress.getAllByName(Unknown Source)
+  at java.net.InetAddress.getAllByName(Unknown Source)
+  at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+  at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+  at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+  at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+  at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+  at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+  at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+  at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+  at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+  at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+  at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+  at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+  at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+[2019-09-16 19:24:16] 
